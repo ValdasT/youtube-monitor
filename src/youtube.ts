@@ -6,7 +6,7 @@ const youtubeSearch = async () => {
   try {
     const res = await google.youtube('v3').search.list({
       key: config.YOUTUBE_TOKEN,
-      maxResults: 100,
+      maxResults: Number(config.YOUTUBE_MAX_RESULTS),
       part: ['snippet'],
       order: 'date',
       publishedAfter: new Date(subtractHours(Number(config.YOUTUBE_RELEASED_HOURS_AGO))).toISOString(),
