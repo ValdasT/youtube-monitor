@@ -1,0 +1,38 @@
+{
+  "name": "monitor_youtube",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node -r dotenv/config dist/index.js",
+    "lint": "eslint . --ext .ts --fix",
+    "build": "tsc --project .",
+    "watch": "nodemon"
+  },
+  "author": "Valdas Trakumas",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.43",
+    "@types/node-cron": "^3.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
+    "eslint": "^8.17.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "prettier": "^2.7.0",
+    "typescript": "^4.7.3"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
+    "googleapis": "^102.0.0",
+    "node-cron": "^3.0.1",
+    "ts-node": "^10.8.1",
+    "uuid": "^8.3.2"
+  },
+  "engines": {
+    "node": "16.x",
+    "npm": "8.x"
+  }
+}

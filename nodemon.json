@@ -1,0 +1,11 @@
+{
+  "verbose": true,
+  "watch": [
+    "./index.ts",
+    "./src/**/*.ts",
+    "./package.json",
+    "./package-lock.json"
+  ],
+  "exec": "ts-node -r dotenv/config --files index.ts",
+  "ext": "ts"
+}
