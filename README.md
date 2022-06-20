@@ -23,7 +23,7 @@ for every two hours set `YOUTUBE_RELEASED_HOURS_AGO=2` and `SCHEDULE_FREQUENCE='
 ## Start project localy
   - Clone git repository: 
   ```sh
- git clone https://github.com/ValdasT/youtubeMonitor.git
+ git clone https://github.com/ValdasT/youtube-monitor.git
   ```
   - Install the dependencies:
 ```sh
